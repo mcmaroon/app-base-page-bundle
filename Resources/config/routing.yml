@@ -1,0 +1,3 @@
+app_base_page:
+    path:     /{slug}
+    defaults: { _controller: AppBasePageBundle:Default:index }    

@@ -1,0 +1,26 @@
+basepage:
+    path:     /
+    defaults: { _controller: "AppBasePageBundle:AdminBasePage:index" }
+    methods:  GET
+
+basepage_new:
+    path:     /new
+    defaults: { _controller: "AppBasePageBundle:AdminBasePage:new" }
+
+basepage_create:
+    path:     /create
+    defaults: { _controller: "AppBasePageBundle:AdminBasePage:create" }
+    methods:  POST
+
+basepage_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "AppBasePageBundle:AdminBasePage:edit" }
+
+basepage_update:
+    path:     /{id}/update
+    defaults: { _controller: "AppBasePageBundle:AdminBasePage:update" }
+    methods:  [POST, PUT]
+
+basepage_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "AppBasePageBundle:AdminBasePage:delete" }

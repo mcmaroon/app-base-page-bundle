@@ -1,0 +1,12 @@
+{% extends "AppAppBundle:Helper:edit.html.twig" %}
+
+{% block javascriptsbody %}    
+    {{ parent() }}
+
+    <script src="//cdn.ckeditor.com/4.5.8/standard/ckeditor.js"></script>
+    
+    <script>
+        CKEDITOR.replace('basepage_description');
+    </script>
+{% endblock %}
+
